@@ -147,7 +147,6 @@ class Authorizaton extends Component {
           <div className="colWrap full-height">
             <div>
               <div className="side-content">
-                <h6 className="copyright">Copyright ORCA 2020</h6>
               </div>
             </div>
             <div className="r-col clear-fix">
