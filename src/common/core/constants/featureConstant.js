@@ -1,0 +1,35 @@
+export default {
+  pageName: {
+    standardPurchaseReview: 'standardPurchaseReview',
+    standardPurchaseCreateForDirect: 'standardPurchaseCreateForDirect',
+    createSpotBuyForDirect: 'createSpotBuyForDirect',
+    spotBuyReviewForDirect: 'spotBuyReviewForDirect',
+    viewPurchaseAgreementDetailForDirect: 'viewPurchaseAgreementDetailForDirect',
+    viewBlanketPOReleaseDetailForDirect: 'viewBlanketPOReleaseDetailForDirect',
+    createPurchaseAgreementForDirect: 'createPurchaseAgreementForDirect',
+    createBlanketPurchaseOrderForDirect: 'createBlanketPurchaseOrderForDirect',
+    standardPurchaseReviewForDirect: 'standardPurchaseReviewForDirect',
+    poDocReleaseOption: 'poDocReleaseOption',
+    createQuotation: 'createQuotation',
+    administrator: 'administrator',
+    billOfMaterial: 'billOfMaterial',
+    search: 'search',
+    createQuotation: 'createQuotation',
+    directQuotation: 'directQuotation',
+    actionOverview: 'actionAndTaskOverview',
+  },
+  featureToggle: {
+    MP5703: 'MP-5703',
+    supplierTaxesInPO: 'supplierTaxesInPO',
+    packagingEnabled: 'packagingEnabled',
+    quotationAddColumns: 'quotationAddColumns',
+    quotationSettings: 'quotationSettings',
+    bulkEdit: 'bulkEdit',
+    MP6291: 'MP-6291',
+    addGSTInPo: 'addGSTInPo',
+    savedQuotation: 'savedQuotation',
+    MP5961: "MP-5961",
+    MP6121: "MP-6121"
+  },
+};
+
