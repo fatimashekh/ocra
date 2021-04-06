@@ -1,0 +1,463 @@
+.or {
+  margin: 0 15px;
+}
+
+.upload-list {
+  padding: 0;
+  &.b-btm {
+    li {
+      &:first-child {
+        margin-top: 15px;
+      }
+      &:last-child {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 18px;
+      }
+    }
+  }
+  li {
+    list-style: none;
+    margin-bottom: 15px;
+    div {
+      white-space: nowrap;
+      max-width: 450px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    img {
+      height: 30px;
+      width: 30px;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+  }
+}
+.up-padd {
+  padding: 10px;
+  padding-top: 2px;
+}
+
+.center-gap {
+  .col-md-6 {
+    &:first-child {
+      padding-right: 25px;
+    }
+    &:last-child {
+      padding-left: 25px;
+    }
+  }
+}
+
+.project-dd {
+  .dropdown {
+    width: 100%;
+  }
+  .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    font-weight: normal;
+    border-color: #ccc;
+  }
+  .s-value {
+    width: 97%;
+    display: inline-block;
+  }
+  .dropdown-menu {
+    width: 100%;
+  }
+  .s-id {
+    font-weight: 700;
+
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+.p-id {
+  min-width: 115px;
+  word-break: break-all;
+}
+
+// pending approval page css
+.createDropnw.rfq-dropn {
+  width: 250px;
+  .popper-dd {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #c5c5c5;
+    max-width: 100%;
+    padding: 0;
+    ul {
+      padding: 0;
+      li.new-list {
+        margin: 3px 0px 0 2px;
+        // padding: 3px 0px 3px 6px;
+        font-size: 11px;
+        padding: 4px 20px 4px 6px !important;
+        .icon-close {
+          font-size: 6px;
+        }
+      }
+    }
+    .form-control {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+  }
+  .poperList {
+    width: 250px;
+    max-height: 110px;
+    padding: 0;
+    button {
+      margin: 0 0 0 0;
+      padding: 1px 10px;
+      font-size: 12px;
+      width: 100%;
+      text-align: left;
+      align-items: baseline;
+      &:hover {
+        background: #dde6eb;
+      }
+    }
+    label {
+      margin: 0 !important;
+    }
+  }
+}
+
+.drp-listtview {
+  .popper-dd {
+    ul{
+      li.new-list{
+        padding: 4px 20px 4px 6px !important;
+      } 
+    }
+  }
+}
+
+.createDropnw.rfq-dropn.editmodl-drp {
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 35px;
+  input.form-control {
+    padding: 6px 5px;
+  }
+  .popper {
+    transform: translate3d(15px, 34px, 0px) !important;
+    ul.poperList {
+      width: 1020px;
+      max-height: 150px;
+    }
+  }
+}
+
+// single dropdown
+
+.singldrpp {
+  .popper-dd {
+    background-position: right 3px bottom 14px;
+  }
+  .popper {
+    // top: 115px !important;
+    ul.poperList {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding-left: 0;
+      max-height: 200px;
+      .btn ~ .btn {
+        margin-left: 0px;
+      }
+      label {
+        margin: 0;
+      }
+      button {
+        margin: 0;
+        padding: 1px 10px;
+        font-size: 12px;
+        width: 100%;
+        text-align: left;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        :hover {
+          background: #dde6eb;
+        }
+      }
+    }
+  }
+}
+
+.select-out {
+  .singl-poslt {
+    // position: absolute;
+    border: 0 !important;
+    .bootstrap-select {
+      width: 110px !important;
+      .bs-searchbox {
+        padding: 0 2px 2px;
+        input {
+          border: 1px solid #a9a9a9 !important;
+        }
+      }
+      ul.dropdown-menu.inner {
+        max-height: 200px !important;
+      }
+      .btn-default {
+        margin: auto;
+        background: transparent;
+        color: #000;
+        border: 0;
+        padding: 0;
+        text-align: center;
+        box-shadow: none;
+        font-weight: 400;
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:hover {
+          background-color: transparent;
+          color: #000;
+          border: 0;
+          outline: none !important;
+        }
+        &:active {
+          &:focus {
+            background-color: transparent;
+            color: #000;
+            border: 0;
+            outline: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .select-out {
+// 	.singl-poslt {
+// 		position: absolute;
+// 		width: 200px;
+// 		.css-2b097c-container{
+
+// 		}
+// 		.css-2613qy-menu{
+// 			margin:0px !important;
+// 			color: #000;
+// 		}
+// 	}
+// }
+
+.multilevldrop {
+  ul.poperList {
+    li {
+      span {
+        padding: 0 5px;
+        font-weight: 500;
+        cursor: default;
+      }
+      ul {
+        padding-left: 0px;
+        li {
+          list-style: none;
+          // :hover {
+          // 	background: #dde6eb;
+          // }
+          button {
+            // :hover {
+            // 	background: none;
+            // }
+          }
+        }
+      }
+    }
+  }
+  .popper-dd {
+    ul {
+      li {
+        background: none;
+        width: 100%;
+        margin: 0 0 0 0px !important;
+        padding: 3px 0 0 6px !important;
+        span {
+          font-size: 11px;
+          font-weight: 500;
+        }
+        ul {
+          li {
+            margin: 0;
+            padding: 0 5px;
+            font-size: 11px;
+            background: none;
+            width: 100%;
+            button {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.createDropnw.rfq-dropn.multilevldrop.add-drop {
+  width: 100%;
+  // width: 200px;
+  .popper-dd {
+    border-bottom: 0;
+  }
+  .popper {
+    .poperList {
+      width: 190px;
+      max-height: 77px;
+    }
+  }
+}
+.noarrw {
+	.popper-dd {
+		background-position: right;
+		background-size: 10px 0px !important;
+		padding-right: 5px !important;
+		margin: auto;
+	}
+	button {
+		background-image: none;
+		background-size: 10px 0px !important;
+		padding-right: 5px !important;
+		margin: auto;
+	}
+}
+
+.rfp-tab > .nav {
+  position: relative;
+  left: 55px;
+  margin-right: 55px;
+}
+
+/* Inactive tab */
+.rfp-tab > ul > li > a {
+  background-color: white;
+  color: #41535b;
+}
+
+.rfp-tab > ul > li > a:hover {
+  background-color: #0a77a7;
+  color: white;
+}
+
+/* Active tab */
+.rfp-tab > ul > li.active > a,
+.rfp-tab > ul > li.active > a:hover,
+.rfp-tab > ul > li.active > a:focus {
+  background-color: white;
+  color: #0a77a7;
+  border: 1px solid transparent;
+  font-size: 1.6rem;
+}
+
+.rfp-tab > ul > li.active:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  padding-top: 0px;
+  border-bottom: 2px solid #0a77a7;
+}
+
+/* Disabled tab */
+.rfp-tab > ul > li.disabled > a {
+  background-color: lightgray;
+  color: darkgray;
+}
+
+.rfp-tab > ul {
+  border: 0px;
+}
+
+.add-part-rfp > .hero-title {
+  // margin-top: 90px;
+  margin-left: 70px;
+}
+
+// .add-part-flex {
+//   display: flex;
+// }
+
+.create-parts {
+  height: 100%;
+  flex: 0 1 auto;
+  .create-parts-heading {
+    background-color: #f5f5f5;
+    height: 60px;
+    margin-top: 60px;
+    h4 {
+      line-height: 60px;
+      margin-left: 15px;
+    }
+  }
+  .create-parts-container {
+    max-width: 80%;
+    //   border-right: 1px solid #80808080;
+    padding-top: 60px;
+    padding-right: 30px;
+
+    .create-parts-table-container {
+      overflow: auto;
+    }
+  }
+}
+
+.part-number-search {
+  width: 250px;
+  position: relative;
+}
+
+.add-part-button {
+  text-transform: none !important;
+  color: #27ae60 !important;
+}
+
+.no-part-found {
+  text-transform: none !important;
+  color: #bbb !important;
+}
+
+.drop-hgttst {
+  .popper {
+    ul.poperList {
+      max-height: 85px;
+      width: 190px;
+      padding: 0;
+      button.listttsp {
+        text-align: left;
+        margin: 0px !important;
+        padding: 2px 7px !important;
+        label {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.partNumberSearchScroll  {
+  height: 200px;
+  overflow-y: auto;
+  z-index: 999999 !important;
+}
+
+.icn-align{
+  ul.dropdown-menu{ 
+    li{
+      span:first-child{
+        width: 16px;
+      }
+    }
+  }
+}
+
+
+

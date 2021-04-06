@@ -1,0 +1,210 @@
+.gray-card {
+  background-color: #f2f5fa;
+  position: relative;
+  hr {
+    border-top: 1px solid #ddd !important;
+    margin:0px;
+  }
+}
+.noIco-form {
+  .form-control {
+    background-color: transparent;
+    padding-left: 5px !important;
+  }
+  .control-label {
+    left: 0;
+  }
+}
+.padding-set {
+  padding: 45px 25px;
+}
+.right-set {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize{
+  text-transform: capitalize;
+}
+
+.addMore .ico-add {
+  margin-right: 5px;
+}
+.sm-btn {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+.odd-strip {
+  tbody {
+    tr {
+      background-color: #f3f3f4;
+      &:nth-child(4n + 3) {
+        background-color: #e4e4e4;
+      }
+    }
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+
+// circulation list dropdown css 
+.show-listcircultn{
+  .modal-dialog {
+    margin-top: 110px;
+    .modal-content {
+      min-height: 200px;
+    }
+  }
+}
+
+.drpdwn-poperset {
+  width: 99%;
+  padding-top: 0 !important;
+  position: relative !important;
+  .ant-popover-arrow {
+    display: none;
+  }
+  .iner-drpdwn{
+    max-height: 150px;
+    overflow-y: auto;
+    ul{
+      margin: 0;
+      padding: 5px 8px 0px;
+      li {
+        font-size: 12px;
+        color: #41535b;
+        list-style: none;
+        font-weight: 500;
+        cursor: default;
+        ul {
+          padding: 0px;
+          margin-bottom: 0px;
+          li{
+            font-weight: 400;
+            button.listttsp {
+              padding: 0px 10px;
+              width: 100%;
+              text-align: left;
+              background: none;
+              &:hover {
+                background: #dde6eb;
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.selectedd-lst{
+    max-height: 240px;
+    overflow-y: auto;
+  ul {
+    padding: 0;
+    li {
+      font-size: 12px;
+      font-weight: 400;
+      color: #41535b;
+      list-style: none;
+      padding: 2px 1px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      span {
+        display: inline-block;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        padding-right: 5px;
+      }
+      span.desig_pro {
+        border-right: 1px solid #41535b;
+        margin-right: 10px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.custm-popdrp {
+  margin-bottom: 30px;
+  div{
+  position: relative !important;
+  }
+  .ant-popover-inner-content {
+    padding: 0;
+  }
+  input.ant-input {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0 2px;
+    &:focus,
+    &:hover{
+        outline: none;
+        box-shadow: none;
+        background: transparent;
+    }
+  }
+}
+
+.no-listcont{
+  color: #41535b;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.more-dd.action-dd {
+  span.icon-circulation-list {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+  }
+}
+
+// part history page
+.popup-ss {
+  width: 400px;
+  .addbtn {
+    cursor: pointer;
+    i {
+      background: #32ad0a;
+      color: #fff;
+      border-radius: 100%;
+      margin-right: 8px;
+      font-size: 8px;
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      text-align: center;
+    }
+  }
+  .sml-btn{
+    padding: 3px 10px;
+  }
+  .popup-drp {
+    .selectedd-lst {
+      max-height: 108px;
+      overflow-y: auto;
+    }
+    .radio-list {
+      span.r-dot {
+        // overflow: visible !important;
+        width: auto;
+      }
+    }
+  }
+  .drpdwn-poperset {
+    .iner-drpdwn {
+      max-height: 80px;
+    }
+  }
+}

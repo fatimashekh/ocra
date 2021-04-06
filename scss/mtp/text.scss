@@ -1,0 +1,42 @@
+// Default Class
+.text{font-size:$xSmall;color:black;display: flex;}
+
+// Font Size
+.xxsmal{font-size:$xxSmall;}
+.xSmall{font-size:$xSmall;}
+.small{font-size:$mdSmall;}
+.bodyfont{font-size:$body;}
+.regular{font-size:$regular;}
+.medium{font-size:$medium;}
+.large{font-size:$large;}
+.mLarge{font-size:$mLarge;}
+.xLarge{font-size:$xLarge;}
+.xxLarge{font-size:$xxLarge;}
+
+// Font color 
+.primaryColor{color:$darkblue;}
+.secondryColor{color:$color-light;}
+.grayColor{color:$dark-green;}
+.dangerText{ color:$dangerous;}
+.success{color:$light-green;}
+.white{color:$white;}
+.black{color:$black;}
+.text-color{color: $text-color;}
+
+
+// Font Weight
+$semibold:400;
+$smbold:500;
+$bold:bold;
+
+// filter for table
+.custom_table_filter {
+    .react-dropdown-select.w-70.selt-drosrch.minheight25 {
+        min-height: 25px;
+        width: 59px !important;
+        height: 25px;
+        &:focus, &:active,&:focus-within {box-shadow: unset;}
+        input,input::placeholder{color: $primary-color !important;}
+        .ant-select-selector {border: none !important;}
+        }
+    }

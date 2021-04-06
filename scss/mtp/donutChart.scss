@@ -1,0 +1,164 @@
+.chartdiv {
+    width: 180px;
+    height: 180px;
+    //float: left;
+    .label-count {
+      font-weight: 500;
+      // height: 43px;
+      text-align: center;
+    }
+    .total-text{
+        font-size: 12px;
+        // margin-left: 25px;
+        text-align: center;
+        color: #828282;
+    }
+  }
+  
+  .legend {
+    // width: 200px;
+    // height: 450px;
+    // border: 1px solid #eee;
+    //margin-left: 10px;
+    //display: inline-block;
+    //margin-top: 25px;
+  }
+  
+  .legend .legend-item {
+    // margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    pointer-events: none;
+    //line-height: 2;
+  }
+  
+  .legend .legend-item .legend-value {
+    font-size: 14px;
+    font-weight: normal;
+    //margin-left: 5px;
+    //padding-bottom: 2px;
+    color: #828282;
+  }
+  
+  .legend .legend-item .legend-marker {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .legend .legend-item.disabled .legend-marker {
+    opacity: 0.5;
+    background: #ddd;
+  }
+
+
+  .ant-card-actions{
+    pointer-events: none;
+    background: #ffffff;
+      li {
+        list-style-type: none;
+        display: inline-block;
+      }
+  } 
+
+  .ant-card {
+
+    .bold-count {
+      font-weight: 500;
+    }
+
+    .rfp-color {
+      color: #001529;
+    }
+
+    hr {
+      border:none;
+      border-top:1px solid #bdbdbd;
+      height:1px;
+      width:100%;
+    }
+
+    .line-item {
+      padding-left: 10px;
+    }
+
+    .line-item::before{
+      content: "\2022";
+      color:  #1890ff;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: 0em;
+      font-size: 17px;
+    }
+    
+    // .rfp-data{
+    //   line-height: 0;
+    // }
+
+    .footer-green {
+      color: #27ae60;
+    }
+    .footer-blue {
+      color: #1890ff;
+    }
+
+    .footer-sect {
+      font-size: 12px;
+      padding: 0 8px;
+      .footer-date {
+        color: #828282;
+        font-size: 10px;
+      }
+    }
+    .dataviz-pro {
+      .progress-data {
+        display: flex;
+        justify-content: space-between;
+        font-size: $xSmall;
+      }
+      .progress {
+        border-radius: 0;
+      }
+      .progress-bar-db {
+        margin: 10px auto 15px auto;
+        height: 12px;
+        .progress-bar {
+          font-size: 12px;
+          background-image: linear-gradient(to right, #1890ff, #1890ff);
+          border-radius: 0 7px 7px 0;
+        }
+      }
+      .progress-bar-db-succ {
+        margin: 10px auto 15px auto;
+        height: 12px;
+        .progress-bar {
+          font-size: 12px;
+          background-image: linear-gradient(to right, #27ae60, #27ae60);
+          border-radius: 0 7px 7px 0;
+        }
+      }
+    }
+    
+  }
+
+.diff-sect {
+  border-top: 1px solid #bdbdbd;
+}
+
+.chart-title {
+  display: flex;
+  justify-content: space-between;
+    h5 {
+      display: inline-block;
+    }
+    .rate-val {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1890ff;
+    }
+}
+  
+  

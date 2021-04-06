@@ -1,0 +1,195 @@
+.popzonalModal{
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/dashboard_popup1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 4s;
+  animation-name: slideIn;
+  animation-duration: 4s;
+  height:125px;
+  align-items: center;
+  justify-content: center;
+  .closemodal {
+    color: #f1f1f1;
+    background: none;
+    opacity: 1;
+    margin: 0;
+    position: absolute;
+    z-index: 999;
+    top: 15px;
+    right: 0px;
+    span{
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
+}
+
+.popuplinkwrap{
+  .andsign {
+    padding: 0 10px;
+    font-size: 18px !important;
+  }
+  li {
+    font-size: 15px;
+    font-weight: 500;
+    color: #f1f1f1;
+    display: inline;
+    a{
+      color: #f1f1f1;
+      border-bottom: 1px solid #f1f1f1;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+.main-ds {
+  min-height: 90px;
+  transition:50s;
+}
+.confim-mod {
+  background: #e1e1e1;
+  padding: 2px 10px;
+  transition-duration: 5s;
+  h5 {
+    font-size: 10px;
+  }
+  button {
+    padding: 0px 2px;
+    font-weight: 500;
+    color: #41545b;
+    background: transparent;
+  }
+}
+
+.ani-del{
+  transition:50s;
+  transition-delay: 50s;
+}
+
+// slider modall css 
+
+.slider-nw{
+  img{
+    margin: auto;
+  }
+}
+
+li.slick-active a span {
+  color: #f00 !important;
+  text-decoration: underline;
+}
+
+.slide-container {
+  width: 70%;
+  margin: auto; }
+
+
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.each-fade .image-container {
+  width: 75%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+}
+
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
+
+
+// tooltip left css
+
+.tooltip-lft {
+  position: relative;
+}
+
+.tooltip-lft .tooltiptext-lft {
+  display: none;
+  width: 230px;
+  background-color: #41535b;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 5;
+  top: -6px;
+  right: 70%;
+  font-size: 11px;
+  line-height: 13px;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.tooltip-lft .tooltiptext-lft::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #41535b;
+}
+.tooltip-lft:hover .tooltiptext-lft {
+  display: block;
+}

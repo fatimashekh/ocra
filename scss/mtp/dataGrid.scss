@@ -1,0 +1,280 @@
+
+.react-resizable {
+    position: relative;
+    background-clip: padding-box;
+  }
+  
+  .react-resizable-handle {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    bottom: 0;
+    right: -5px;
+    cursor: col-resize;
+    z-index: 1;
+  }
+
+  
+
+  // .ant-table-wrapper {
+  //   border: 0.5px solid #c0c0c0;
+  // }
+    .create-bom{
+      .bom-tree-grid{
+        .ant-table {
+          .ant-table-container {
+            .ant-table-header {
+              .ant-table-cell-fix-left {
+                position: sticky !important;
+              }
+            }
+            .ant-table-body {
+              .ant-table-cell-fix-left {
+                position: sticky !important;
+              }
+            }
+          }
+        }
+      }
+      .ant-table {
+        .ant-table-small thead {
+          tr {
+            th {
+              font-weight: normal;
+            }
+          } 
+        } 
+      }
+
+      .ant-table thead {
+        tr {
+          th {
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            color: rgba(0, 0, 0, 0.9);
+          } 
+        }  
+      }
+
+      .ant-table tbody {
+        .disable-row {
+          pointer-events: none;
+        }
+        tr {
+          td {
+            height: 14px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            color: #222222;
+            border-bottom: none;
+          } 
+        }  
+      }
+    
+      .ant-table-row {
+        .part-number {
+          font-weight: 500;
+          // min-width: 200px;
+        }
+      }
+    
+      .ant-table tbody {
+        .ant-checkbox-inner{
+          width: 11px;
+          height: 11px;
+          border-radius: 1px;
+          // border: solid 0.8px #c0c0c0;
+        }
+      }
+    
+      .ant-table thead {
+        .ant-checkbox-inner{
+          width: 11px;
+          height: 11px;
+          border-radius: 1px;
+          // border: solid 0.8px #c0c0c0;
+          // background-color: #ebebeb;
+        }
+      }
+    }
+  
+  
+
+  
+
+  
+
+  .anticon-setting {
+    padding-right: 2px;
+    font-size: 10px;
+    color: #ff992d;
+  }
+
+
+  //Only for BOM Table - Custom CSS 
+  .create-bom{
+    .filter-header{
+      .ant-table-container {
+        table{
+          thead tr th{
+            .ant-table-filter-column-title{
+              // padding: 0px 2.3em 0px 8px; // change BOM page filter right to left
+              padding: 0px 8px 0 2.3em;
+            }
+           
+          }
+        } 
+      }
+    }
+    .bom-tree-grid{
+      .ant-table-container {
+        border-right: 1px solid #c0c0c0;
+        border-left: 1px solid #c0c0c0;
+        border-bottom: 1px solid #c0c0c0;
+        table{
+          thead tr th:nth-child(2){
+            padding-right: 0px;
+            padding-left: 0px;
+          }
+          thead tr th:nth-child(3){
+           // padding-left: 0px; alignment with filter heading in BOM
+          }
+          thead tr th:last-child{
+            padding-right: 45px;
+          }
+          tbody tr td{
+            border-bottom: none;
+            // padding-left: 17px;
+          }
+          
+        }
+      }
+    }
+
+    
+
+    .bom-file-path-grid {
+      .bom-rev-file {
+        width: 150px;
+      }
+      .review-header {
+        padding-bottom: 35px;
+        height: 16px;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        color: #515151;
+      }
+      .ant-table-container {
+        border-right: 1px solid #c0c0c0;
+        border-left: 1px solid #c0c0c0;
+        border-bottom: 1px solid #c0c0c0;;
+        }
+    }
+
+    // .nowrap-col {
+    //   white-space: nowrap;
+    // }
+    
+  }
+  
+
+  // .ant-table.ant-table-small thead > tr > th
+  .ant-table-content {
+    table {
+      thead tr th {
+        color: $black;font-size: $xSmall;
+        font-weight: $smbold;
+      }
+    }
+  }
+
+  .ant-table-title {
+    height: 30px;
+    border: 1px solid $borderColor;
+    background-color: #ffffff;
+    border-bottom: none;
+    font-size: 12px;
+    // color: #424242;
+    .page-select {
+      float: right;
+      .data-length {
+        display: inline;
+        padding-right: 10px;
+      }
+      .data-show {
+        display: inline;
+      }
+      .col-select {
+        max-height: 200px;overflow-y: auto;
+        width: 215px;
+        background-color: white;
+        z-index: 999;
+        position: fixed;
+        border-radius: 2px;
+        box-shadow:
+          0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+          0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+          0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+        .check-grid {
+          padding: 10px;
+        }
+      }
+      .col-select-his {
+        height: 350px;
+        width: 215px;
+        background-color: white;
+        z-index: 9;
+        position: absolute;
+        right: 0px;
+        border-radius: 2px;
+        overflow-y: auto;
+        box-shadow:
+          0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+          0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+          0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+        .check-grid {
+          padding: 10px;
+        }
+      }
+    }
+    .cost-sel {
+      position: absolute;
+      right: 250px;
+      top: 5px;
+    }
+    .selt-drosrch {
+      display: inline-block;
+      padding-left: 8px;
+      .css-yk16xz-control, .css-1pahdxg-control {
+        // min-height: 30px !important;
+        // max-height: 35px !important;
+        border-width: 0px;
+        height: 30px;
+        padding-bottom: 3px;
+        .css-1uccc91-singleValue {
+          color: #007bff;
+        }
+        .css-1okebmr-indicatorSeparator {
+          display: none;
+        }
+      }
+    }
+  }
+  
+
+  
+
+
+  
+
+  
+  

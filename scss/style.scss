@@ -1,0 +1,85 @@
+// The 'Mixins' scss
+@import "mixins/flex.scss";
+
+// The 'Variables' scss
+@import "modules/variables.scss";
+
+// The 'Icons' scss
+@import "modules/icons.scss";
+
+// The 'Inputs' scss
+@import "modules/inputs.scss";
+
+// The 'Buttons' scss
+@import "modules/button.scss";
+
+// The 'Modal' scss
+@import "modules/modal.scss";
+
+// The 'Navs' scss
+@import "partials/nav.scss";
+
+
+
+@import "ico-font/ico-font";
+// The 'Ant table' scss
+@import "../node_modules/antd/dist/antd";
+@import "../node_modules/react-quill/dist/quill.snow";
+@import "../node_modules/react-quill/dist/quill.bubble";
+@import "partials/tophead.scss";
+@import "partials/topbar.scss";
+@import "partials/sidebar.scss";
+
+
+@import "dashboard.scss";
+@import "mtp/login.scss";
+@import "mtp/dash-view.scss";
+@import "mtp/add-user.scss";
+@import "mtp/add-part.scss";
+@import "mtp/spaces.scss";
+@import "mtp/common.scss";
+@import "mtp/budget.scss";
+@import "mtp/quotation.scss";
+@import "mtp/table.scss";
+@import "mtp/slider.scss";
+@import "mtp/print.scss";
+@import "mtp/adi.scss";
+@import "mtp/administrator.scss";
+@import "mtp/component.scss";
+@import "mtp/chat";
+@import "mtp/rawmaterial.scss";
+@import "./loader.scss";
+@import "./errorPage.scss";
+@import "mtp/external.scss";
+@import "mtp/pdf-annotation.scss";
+@import "mtp/issue-management.scss";
+@import "mtp/tag-action.scss";
+@import "mtp/mapColtoField.scss";
+@import "mtp/bom.scss";
+@import "mtp/table-input.scss";
+@import "mtp/custom-drop.scss";
+@import "mtp/dataGrid.scss";
+@import "mtp/tarun.scss";
+@import "mtp/newpage.scss";
+@import "mtp/donutChart.scss";
+@import "mtp/actionTask.scss";
+
+@import "mtp/redefine.scss";
+@import "mtp/bookmark.scss";
+@import "mtp/suppRegistrationSetup.scss";
+@import "mtp/supplierReg.scss";
+@import "mtp/formik.scss";
+@import "mtp/buildPlan.scss";
+@import "mtp/custom.scss";
+@import "mtp/integration.scss";
+@import "mtp/drawer.scss";
+@import "mtp/customStyle.scss";
+@import "mtp/text.scss";
+@import "mtp/buttons.scss";
+@import "mtp/demoDashboard.scss";
+@import "mtp/newRfp.scss";
+@import "mtp/main.scss";
+
+
+
+

@@ -1,0 +1,233 @@
+
+.multiAnnot {
+    width: 175px;
+    position: absolute;
+    z-index: 1;
+    left: 820px;
+    top: 87px;
+    .css-yk16xz-control {
+      display: none;
+    }
+    .css-1hwfws3 {
+        display: none;
+    }
+    .css-1okebmr-indicatorSeparator {
+        display: none;
+    }
+    .css-tlfecz-indicatorContainer {
+        position: absolute;
+        right: 0px;
+    }
+    .css-4ljt47-MenuList {
+        .css-1n7v3ny-option {
+            background-color: #fff;
+        }
+        .css-9gakcf-option {  
+            background-color: #fff;
+        }
+        .css-yt9ioa-option {
+            background-color: #fff;
+        }
+    }
+    .colorcontainer {
+      display: flex;
+      background: white;
+      padding: 5px 10px;
+      width: 140px;
+    }
+    .borderContainer {
+      display: flex;
+      background: white;
+      padding: 5px 10px;
+      width: 140px;
+      color: black;
+    }
+    .selectorContainer {
+      display: flex;
+      background: white;
+      padding: 5px 10px;
+      width: 140px;
+    }
+  }
+  
+  .dOzHeN{
+    display: none;
+  }
+  
+  .commentAnnots {
+    position: relative;
+    // overflow: auto;
+    color: #41535b;
+    .commentText{
+        width: 60%;        
+    }
+    .commentTime {
+      font-size: 9px;
+      float: right;
+      position: absolute;
+      top: 30px;
+      right: 54px;
+    }
+    .replyComments {
+      margin-bottom: 15px;
+    }
+    .relpySave{
+        float: right;
+        line-height: 4px;
+        padding: 9px;
+    }
+    .replies {
+        margin-left: 8px;
+        margin-top: -3px;
+        .panel-body {
+            padding: 5px;
+            p {
+              margin: 0 0 15px;
+              width: 60%;
+              float: left;              
+            }
+            .relpyTime{
+              font-size: 9px;
+              float: right;
+            }
+        }
+        .panel-title {
+            font-size: 13px;
+            color: cornflowerblue;
+            a:focus, a:hover {
+                text-decoration: none;
+            }
+        }
+        .panel-default {
+            border-color: #ffffff;
+        }
+    }
+  }
+
+  .Highlight__popup {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    max-width: 260px;
+    max-height: 100px;
+    color: #41535b;
+    padding: 8px 16px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    width: 250px;
+    .userName {
+      padding-right: 60px;
+      font-weight: bold;       
+      color: #7573c7;
+    }
+    .commentText{
+        width: 60%;        
+    }
+    .commentTime {
+      font-size: 9px;
+      float: right;
+      position: absolute;
+      top: 42px;
+      right: 5px;
+    }
+    // .replyComments {
+    //   margin-bottom: 15px;
+    // }
+    // .relpySave{
+    //     float: right;
+    //     line-height: 4px;
+    //     padding: 9px;
+    // }
+    // .replies {
+    //     margin-left: 8px;
+    //     margin-top: -3px;
+    //     .panel-body {
+    //         padding: 5px;
+    //         p {
+    //           margin: 0 0 15px;
+    //           width: 60%;
+    //           float: left;              
+    //         }
+    //         .relpyTime{
+    //           font-size: 9px;
+    //           float: right;
+    //         }
+    //     }
+    //     .panel-title {
+    //         font-size: 13px;
+    //         color: cornflowerblue;
+    //         a:focus, a:hover {
+    //             text-decoration: none;
+    //         }
+    //     }
+    //     .panel-default {
+    //         border-color: #ffffff;
+    //     }
+    // }
+    
+  }
+  
+  .formtcauto {
+    .input-group-btn{
+      display: none;
+    }
+    .autosuggest .input-group {
+      width: 250px;
+    }
+    ul {
+      width: 250px;
+    }
+  }
+  
+  .iamgeAnnots {
+    // margin-top: 56px;
+    // margin-bottom: 31px;
+    .userName {
+      padding-right: 60px;
+      font-weight: bold;       
+      color: #7573c7;
+    }
+    .replyIcon{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0px;
+      right: 30px;
+      cursor: pointer;
+    }
+    .tagIcon{
+      // width: 20px;
+      // height: 20px;
+      position: absolute;
+      top: 28px;
+      right: 2px;
+      cursor: pointer;
+      color: #41545b;
+    }
+  }
+  
+  
+  .dateSelect{
+    width: 250px;
+  }
+  
+  .dateCol{
+    position: absolute;
+      right: -18px;
+  }
+
+  .formtag {
+    width: 100%;
+  }
+
+  .required{
+    color: red;
+  }
+
+
+  .disabled-date {
+    pointer-events: none;
+    opacity: 0.3;
+  }

@@ -1,0 +1,201 @@
+// @media print{
+//     .custom-table tbody tr,
+//     .custom-table thead tr th,
+//     .custom-table tbody tr td
+//     {
+//         font-size: 9px;
+//         padding: 2px;
+//         text-align: left;
+//     }
+
+//     .custom-table.table-bordered,
+//     .custom-table tbody tr,
+//     .custom-table thead tr th,
+//     .custom-table tbody tr td
+//     {
+//         border: 0 !important;
+//     }
+
+//     .table-responsive.table-responsive {
+//         min-height: .01%;
+//         overflow-x: hidden;
+//     }
+//     .printHeading1{
+//         display: block;
+//         font-size: 9px;
+//         padding: 2px;
+//         text-align: left;
+//     }
+
+// }
+
+@media print {
+  .printableTable {
+    padding: 10px 15px; 
+    span.text-chng {
+      font-size: 7px;
+    }
+  }
+  .table tbody tr,
+  .table thead tr th,
+  .table tbody tr td {
+    font-size: 7px;
+    padding: 2px; 
+    text-align: center;
+    color:#111 !important;   
+  }
+  
+  .po-table-print{
+    table{
+      th{
+        padding: 10px 12px;
+      }
+    } 
+  }
+
+  // .table.table-bordered,
+  // .table tbody tr,
+  // .table thead tr th,
+  // .table tbody tr td
+  // {
+  //     // border: 0 !important;
+  // }
+  // .custom-table tbody tr:nth-child(even)
+  // {
+  //     height: 0;;
+  // }
+
+  .table-responsive.table-responsive {
+    min-height: 0.01%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+}
+// Calling custom boostrap in print
+.col-print-1 {
+  width:8%; 
+ float:left;
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px
+ }
+.col-print-2 {
+  width:16%; 
+  float:left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px
+}
+.col-print-3 {
+  width:25%;
+   float:left;
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px
+  }
+.col-print-4 {
+  width:33%;
+   float:left;
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px
+  }
+.col-print-5 {
+  width:42%;
+   float:left;
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px
+  }
+.col-print-6 {
+  width:50%;
+   float:left;
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px
+  }
+.col-print-7 {
+  width:58%;
+   float:left;
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px
+  }
+.col-print-8 
+{
+  width:66%;
+   float:left;
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px
+  }
+.col-print-9 {
+  width:75%;
+   float:left;
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px
+  }
+.col-print-10
+{
+width:83%;
+ float:left;
+ position: relative;
+ min-height: 1px;
+ padding-right: 15px;
+ padding-left: 15px
+}
+.col-print-11{
+  width:92%;
+   float:left;
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px
+  }
+.col-print-12{
+  width:100%; 
+  float:left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+
+@page {
+  size: landscape;
+  orientation: landscape;
+}
+
+@media print {
+  .print-viewlist{
+    ul{
+      list-style: none;
+      li{
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        font-size: 9px;     
+      }
+      li:after {
+        content: ",";
+        padding-right: 2px;
+      }
+      li:last-child:after{
+        display: none;
+      }
+    }
+  }
+}  

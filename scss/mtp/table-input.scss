@@ -1,0 +1,254 @@
+.numric-data{
+	text-align: right !important;
+}
+.text-data{
+	text-align: left !important;
+}
+
+
+// table css
+.table-fixhead {
+	margin-bottom: 30px;
+	.bomnew-tbl {
+		margin-bottom: 0;
+		thead {
+			tr {
+				border-bottom: 1px solid #bfc9cd;
+				th {
+					text-align: left;
+					border: 0;
+					padding: 5px 8px;
+					font-weight: 500;
+					color: #4a4a4a;
+					font-size: 10px;
+					vertical-align: top;
+					border-bottom: 0;
+				}
+			}
+		}
+		tbody {
+			tr {
+				border-bottom: 1px solid #ddd;
+				td {
+					border: 0;
+					padding: 8px 8px;
+					vertical-align: unset;
+					font-size: 10px;
+  				font-weight: 400;
+					color: #4a4a4a;
+					text-transform: capitalize;
+				}
+				.text-blu {
+					color: #0a77a7;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+
+
+// toggle btn
+.swtich-toggl{
+	display: inline-block;
+	span {
+		margin-right: 5px;
+		color: #9b9b9b;
+		font-size: 12px;
+	}
+	.switch-btn {
+		position: relative;
+		display: inline-block;
+		width:  44px;
+		height: 20px;
+	}
+	
+	.switch-btn input { 
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+	
+	.slider-btn {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #bababa;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+	
+	.slider-btn:before {
+		position: absolute;
+		content: "";
+		height: 18px;
+		width: 18px;
+		left: 0px;
+		bottom: 1px;
+		background-color: white;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+	
+	input:checked + .slider-btn {
+		background-color: rgb(24, 144, 255);
+	}
+	
+	input:focus + .slider-btn {
+		box-shadow: 0 0 1px #0a77a7;
+	}
+	
+	input:checked + .slider-btn:before {
+		-webkit-transform: translateX(20px);
+		-ms-transform: translateX(20px);
+		transform: translateX(20px);
+	}
+	
+	.slider-btn.round {
+		border-radius: 34px;
+	}
+	
+	.slider-btn.round:before {
+		border-radius: 50%;
+	}
+}
+
+// input 
+
+.nw-inputhover {
+	input{
+	border: 1px solid #fff;
+    height: 20px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: left;
+    padding: 2px 4px 2px 5px;
+    color: #000;
+    width: 80px;
+    margin-right: 0;
+	font-size: 10px;
+	font-weight: 400;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+		&:hover ,  &:focus {
+			background: #f0f0f0;
+			border: 1px #6f6f6f dotted !important;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+	}
+	::placeholder {
+		color: $mediumGray !important;
+  		font-size: $xSmall;
+	}
+	
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: $mediumGray !important;
+		font-size: $xSmall;
+	}
+	
+	::-ms-input-placeholder { /* Microsoft Edge */
+		color: $mediumGray !important;
+		font-size: $xSmall;
+	}
+	select{
+		height: 20px;
+		background-position: right 3px bottom 5px;
+		border: 1px solid #fff;
+		box-shadow: none;
+		color: #000;
+		&:hover ,  &:focus {
+			// background-color: #f0f0f0;
+			border: 1px #6f6f6f dotted !important;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+	}
+}
+
+// modal css
+.modl-newdesgn {
+	.modal-dialog {
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%) !important;
+		width: 450px;
+		.modal-header {
+			background: #f5f5f5;
+			border: 1px solid #D7D7D7;
+			box-sizing: border-box;
+			border-radius: 6px 6px 0px 0px;
+			h5 {
+				margin: 0;
+				line-height: 19px;
+				color: #515151;
+			}
+			button.close {
+				font-size: 22px;
+				font-weight: 400;
+				opacity: 1;
+			}
+		}
+		.modl-maincon {
+			padding: 20px 0 30px;
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			color: #515151;
+			.progress-bar-bom {
+				margin: 25px auto;
+				width: 80%;
+				height: 16px;
+				border-radius: 5px;
+				.progress-bar {
+					font-size: 12px;
+					background-image: linear-gradient(to right, #007bff);
+					animation-duration: 3s;
+					animation-name: progress;
+				}
+			}
+			h5{
+				color: #515151;
+			}
+			span {
+				font-size: 12px;
+				color: #515151;
+			}
+			p {
+				// margin: 0 0 6px;
+			}
+		}
+		.reupload-file {
+			line-height: 25px;
+			color: #828282;
+		}
+		.mapping-component {
+			width: 100%;
+			height: 300px;
+			color: #515151;
+		}
+		.newdesgbody {
+			.subhedmodl{
+				color: #808080;
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+
+// ant table 
+.ant-tblcustm{
+	.ant-table-wrapper {
+		margin: 0 20px;
+	}
+	.ant-table-thead > tr > th{
+		background: #f2f2f2 !important;
+    	border-bottom: 1px solid #bfbfbf;
+	}
+}
+.test {position: fixed;}

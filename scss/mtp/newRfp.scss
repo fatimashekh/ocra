@@ -1,0 +1,72 @@
+    .parent-ele.drawer_data_wrap.drawer_data_wrap1 {
+        .summary-card {
+            .desc {font-size: $xxSmall !important;color: $text-color !important;}
+        }
+    }
+    .parent-ele.drawer_data_wrap.drawer_data_wrap11 {
+        .summary-card {
+            .desc {font-size: $xSmall !important;color: $text-color !important;}
+        }
+    }
+    .parent-ele.drawer_data_wrap {
+        .drawer-view {
+            .drawer-header {
+                .user-info {font-size: $xxSmall;font-weight: normal;color: $black;display: block;
+                    margin-top: -10px;}
+                .color-blue,.color-blue span {color: $primary-color !important;}
+                .title-info {
+                    .title.custom_title {
+                        font-size: $xSmall;color: $black;display:flex;
+                        span {font-weight:500;}
+                        ul{padding-left:$lsmall;margin:0px;}
+                    }
+                    .btn.sq_ico_btn {color: $text-color;}
+                }
+                
+            }
+            .summary-card {
+            .desc {font-size: $xxSmall;color: $black;opacity:1;}
+            .pos-br,.value {font-size: $xSmall !important;color: $black;}
+            .color-blue,.color-blue span {color: $primary-color !important;}
+            h5 {font-size: $xSmall !important;color: $black !important;font-weight:500;}
+            .revisn-btn {bottom:3px;}
+            .cir_ico_btn {color: $text-color;}
+            .comment_user_data {
+                h5 {font-weight: 300;color:$black;}
+                h5.username,.ql-editor > p  {font-weight: 500 !important;color:$black;font-size: $xSmall;}
+                .cir_ico_btn {border-radius: 50% !important;}
+            }
+            h5.text-decor {color:$text-color !important;}
+            .multislider_wrap {
+                .ant-select-selector {
+                    .ant-select-selection-item {
+                        min-height:30px;font-size:$xSmall;
+                        .anticon-close {width: 13px;height: 13px;font-size: 7px;}
+                        }
+                    }   
+                }
+                .attch-cmt {
+                    .attch-count {
+                        span.color-ash {color:$hint-color;}
+                    }
+                    .delrow-btn {font-size:1.5rem;}
+                }
+            }
+            #timeline {
+                min-height: 100vh;
+                h5 {font-size: $mdSmall;}
+                ul {
+                    li {
+                        h1 {font-size: $xSmall;color: $black;}
+                        h2 {font-size: $xxSmall;}
+                        h3 {color: $text-color;font-size: $xSmall}
+                        h4 {color: $hint-color;font-size: $xxSmall}
+                        div:last-child h2 {font-size: $xSmall}
+                    }
+                }
+            }
+            .ant-select-selection-placeholder {
+                font-size: $xSmall;color: $hint-color;
+            }
+            }
+    } 
