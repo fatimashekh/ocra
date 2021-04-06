@@ -33,8 +33,6 @@ import {
 import CONSTANTS from '../../common/core/config/appConfig';
 import { ToastContainer } from 'react-toastify';
 import { ZoomInAndOut, getLocalStorage } from '../../common/commonFunctions';
-import featureConstant from '../../common/core/constants/featureConstant';
-import { getFeatureStatus } from '../../common/featureToggle/utils';
 let { customConstant } = CONSTANTS;
 var sessionTime;
 class SupplierHeader extends Component {
@@ -336,7 +334,6 @@ class SupplierHeader extends Component {
 
                       {this.state.partList &&
                         this.state.partList.map((data, sIdx) => {
-                          let searchToggleEnabled = getFeatureStatus(featureConstant.pageName.search, featureConstant.featureToggle.MP6291)
                           let code = data.projectResponse && data.projectResponse.projectCode ?
                             data.projectResponse.projectCode : 'Project Code';
                           let title = data.projectResponse && data.projectResponse.projectTitle ? ' | ' +
@@ -345,9 +342,6 @@ class SupplierHeader extends Component {
                           let itemCode = ' | ' + (data.itemCode ? data.itemCode : 'Item Code');
                           let partNumber = data.partNumber;
                           let suggestion = '';
-                          if (searchToggleEnabled)
-                            suggestion = partNumber + '.' + data.partRevisionNumber + ' (' + code + title + ')' + ' (' + partDescription + itemCode + ')';
-                          else
                             suggestion = partNumber + '(' + code + title + ')';
                           return (
                             <li key={sIdx}
@@ -358,14 +352,10 @@ class SupplierHeader extends Component {
                                 );
                               }}
                             >
-                              {searchToggleEnabled ?
-                                <div>{ReactStringReplace(suggestion, this.state.searchByPart, (match, i) => (
-                                  <span style={{ 'color': '#007BFF' }}>{match}</span>
-                                ))}</div>
-                                : <span>
+                              <span>
                                   {suggestion}
                               </span>
-                              }
+                              
                             </li>
                           );
                         }, this)}

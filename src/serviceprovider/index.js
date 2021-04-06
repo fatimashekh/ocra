@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Authorization from '../common/authorization';
 import Home from './home/homeContainer';
+import Landing from '../landing/landing';
 import NewDashboard from './dashboard/dashboardContainer';
 import ErrorPage from "../common/error/error";
 import Administrator from './administrator/administrator';
@@ -107,6 +108,11 @@ class ServiceProviderView extends Component {
           component={Authorization}
         />
 
+        <Route
+          exact
+          path={`/landing`}
+          component={Landing}
+        />
         <Route exact path={`/home`} component={Home} />
         <Route
           exact

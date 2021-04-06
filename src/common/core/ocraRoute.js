@@ -33,11 +33,11 @@ class OcraRoute extends Component {
               exact
               from="/"
               to={{
-                pathname: "/signin"
+                pathname: "/landing"
               }}
             />
             <Route path="/signup" component={Authorization} />
-            <Route path="/signup" component={Authorization} />
+            <Route path="/signin" component={Authorization} />
             <Route path="/supplier/signup" component={Authorization} />
             <ServiceproviderView {..._this.props} />
             <Route component={ErrorPage} />

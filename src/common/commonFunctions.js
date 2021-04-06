@@ -12,7 +12,6 @@ import { LoadingOutlined } from '@ant-design/icons';
 import iconSuccess from  '../img/icon-success.svg'
 import iconWarning from  '../img/icon-warning.svg'
 import iconDangerous from  '../img/icon-dangerous.svg'
-import { getFeatureStatus } from '../common/featureToggle/utils';
 let { customConstant } = CONSTANTS;
 const cryptr = new Cryptr(CONSTANTS.CRYPTER_KEY);
 let toastId = '';
@@ -684,7 +683,6 @@ export const validMobileNumber = (number) => {
  * per requirments
  */
 export function makeBatchApiCallsForRevision(partOrBomsData,batchSize,props,propertyName,callBackToUpdateState,multipleIds){
-if(getFeatureStatus('revision','revisionAlert')) {
     let ids = [];
 
     let updatePartsOrBomRecord = (partsOrBoms, filteredBomsOrPart, showLoading)=>{
@@ -780,7 +778,7 @@ if(getFeatureStatus('revision','revisionAlert')) {
     
     } 
     processApiCalls(partOrBomsData,0,batchSize);
-  }
+  
 }
 
 let makeCall = (partsIds,props)=>{
@@ -793,7 +791,6 @@ let makeCall = (partsIds,props)=>{
 }
 
 export function updateNewRevision(partOrBomsData,props,callBackToUpdateState,batchSize,fieldName, hasPartResponse) {
-if(getFeatureStatus('revision','revisionAlert')) {
   let multipleIds = {};
   let singleIds = {};
   let index=0;
@@ -876,5 +873,5 @@ if(getFeatureStatus('revision','revisionAlert')) {
     }
     callBackToUpdateState(partOrBomsData);
   }
-  }
+  
 }
