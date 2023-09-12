@@ -14,6 +14,7 @@ import reducers from "./common/core/redux/reducers";
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 const store = createStoreWithMiddleware(reducers);
 
+
 ReactDOM.render(
   <OcraRoute store={store} />,
   document.getElementById("root")
